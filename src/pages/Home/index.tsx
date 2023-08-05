@@ -73,7 +73,7 @@ const Home = () => {
         .then(() => {
           toggleFormModal();
           mutate();
-          toast.success('User updated with success!');
+          toast.success('Card updated with success!');
           reset();
         })
         .catch((err: AxiosError<ErrorResponse>) => {
@@ -85,7 +85,7 @@ const Home = () => {
         .then(() => {
           toggleFormModal();
           mutate();
-          toast.success('User created with success!');
+          toast.success('Card created with success!');
           reset();
         })
         .catch((err: AxiosError<ErrorResponse>) => {
@@ -100,7 +100,7 @@ const Home = () => {
       .then(() => {
         toggleDeletionModal();
         mutate();
-        toast.success('User deleted with success!');
+        toast.success('Card deleted with success!');
       })
       .catch((err: AxiosError<ErrorResponse>) => {
         toast.error(err.response?.data.message || err.message);
@@ -246,7 +246,7 @@ const Home = () => {
       <Modal
         isOpen={isDeletionModalOpen}
         onClose={toggleDeletionModal}
-        title="Password deletion confirmation"
+        title="Card deletion confirmation"
         secondaryButton={{
           appearance: 'secondary',
           children: 'Delete',
@@ -260,9 +260,9 @@ const Home = () => {
         }}
       >
         <p>
-          Are you sure you want to delete this password?
+          Are you sure you want to delete this card?
           <br />
-          Once you delete, you will never be able to recover this password.
+          Once you delete, you will never be able to recover this card.
         </p>
       </Modal>
     </HomeContainer>
