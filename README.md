@@ -1,5 +1,7 @@
 # Password Manager (Frontend)
 
+Single page application (SPA) built with React following the [recommended file-type-based folder structure](https://legacy.reactjs.org/docs/faq-structure.html#grouping-by-file-type)
+
 ## Technologies and Libraries
 
 - [Typescript](https://www.typescriptlang.org/)
